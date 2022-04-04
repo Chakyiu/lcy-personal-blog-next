@@ -14,7 +14,7 @@ const SWrapper = styled.div`
   height: 100%;
 `
 
-const FullPageLayout: React.FC = ({ children }) => {
+const ContentPageLayout: React.FC = ({ children }) => {
   return (
     <SContainer>
       <SWrapper>{children}</SWrapper>
@@ -22,4 +22,4 @@ const FullPageLayout: React.FC = ({ children }) => {
   )
 }
 
-export default FullPageLayout
+export default ContentPageLayout
