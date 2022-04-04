@@ -2,11 +2,11 @@ import vars from './vars'
 
 export const lightTheme = {
   ...vars,
-  body: '#FFF',
+  body: '#ffffff',
   text: '#363537',
-  toggleBorder: '#FFF',
   background: '#363537',
   header: {
+    boxShadow: '0 5px 20px -10px #000',
     selectedNavBar: '#000000',
   },
 }
@@ -14,10 +14,10 @@ export const lightTheme = {
 export const darkTheme = {
   ...vars,
   body: '#363537',
-  text: '#FAFAFA',
-  toggleBorder: '#6B8096',
+  text: '#fafafa',
   background: '#999',
   header: {
+    boxShadow: '0 5px 20px -10px #000',
     selectedNavBar: '#000000',
   },
 }

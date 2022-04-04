@@ -13,10 +13,8 @@ const SContainer = styled.div<{ isTransparent?: boolean }>`
   top: 0;
   display: flex;
   justify-content: center;
-  background-color: ${({ theme, isTransparent }) =>
-    isTransparent ? 'transparent' : theme.body};
-  box-shadow: ${({ isTransparent }) =>
-    isTransparent ? 'none' : '0 5px 20px -10px #000'};
+  background-color: ${({ theme, isTransparent }) => (isTransparent ? 'transparent' : theme.body)};
+  box-shadow: ${({ theme, isTransparent }) => (isTransparent ? 'none' : theme.header.boxShadow)};
 `
 
 const SWrapper = styled.div`
