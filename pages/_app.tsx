@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'styled-components/macro'
 import { wrapper } from '@store/store'
 import { useSelector } from 'react-redux'
 import { RootState } from '@store/reducers'

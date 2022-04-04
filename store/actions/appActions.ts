@@ -42,10 +42,3 @@ export function tickClock(isServer: boolean): actionIs.TickClock {
     ts: Date.now(),
   }
 }
-
-export function setPage(pageName: string): actionIs.SET_PAGE {
-  return {
-    type: actionTypes.SET_PAGE,
-    data: pageName,
-  }
-}
