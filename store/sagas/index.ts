@@ -14,10 +14,7 @@ function* runClockSaga() {
 
 function* loadDataSaga() {
   try {
-    const { status, data }: AxiosResponse<User[]> = yield call(
-      axios.get,
-      'https://jsonplaceholder.typicode.com/users'
-    )
+    const { status, data }: AxiosResponse<User[]> = yield call(axios.get, 'https://jsonplaceholder.typicode.com/users')
 
     if (status === 200) {
       yield put(loadDataSuccess(data))
@@ -28,10 +25,7 @@ function* loadDataSaga() {
 }
 
 function* rootSaga(): Generator {
-  yield all([
-    call(runClockSaga),
-    takeLatest(actionTypes.LOAD_DATA, loadDataSaga),
-  ])
+  yield all([call(runClockSaga), takeLatest(actionTypes.LOAD_DATA, loadDataSaga)])
 }
 
 export default rootSaga

@@ -11,15 +11,7 @@ export enum actionTypes {
   TICK_CLOCK = 'TICK_CLOCK',
 }
 
-export type Action =
-  | Failure
-  | Increment
-  | Decrement
-  | Reset
-  | LoadData
-  | LoadDataSuccess
-  | StartClock
-  | TickClock
+export type Action = Failure | Increment | Decrement | Reset | LoadData | LoadDataSuccess | StartClock | TickClock
 
 export interface Failure {
   type: actionTypes.FAILURE

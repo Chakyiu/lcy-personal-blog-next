@@ -5,10 +5,7 @@ export const initialState: AppState = {
   theme: 'light',
 }
 
-const appReducer = (
-  state = initialState,
-  action: Action | { type: typeof HYDRATE; payload: AppState }
-): AppState => {
+const appReducer = (state = initialState, action: Action | { type: typeof HYDRATE; payload: AppState }): AppState => {
   switch (action.type) {
     case HYDRATE:
       return { ...state, ...action.payload }

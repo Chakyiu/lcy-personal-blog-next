@@ -1,10 +1,4 @@
-import {
-  applyMiddleware,
-  createStore,
-  Middleware,
-  StoreEnhancer,
-  Store,
-} from 'redux'
+import { applyMiddleware, createStore, Middleware, StoreEnhancer, Store } from 'redux'
 import { createWrapper, MakeStore } from 'next-redux-wrapper'
 import createSagaMiddleware from 'redux-saga'
 
@@ -22,10 +16,7 @@ const bindMiddleware = (middleware: Middleware[]): StoreEnhancer => {
 export const makeStore: MakeStore<Store<RootState>> = () => {
   const sagaMiddleware = createSagaMiddleware()
 
-  const store = createStore(
-    rootPersistReducer,
-    bindMiddleware([sagaMiddleware])
-  )
+  const store = createStore(rootPersistReducer, bindMiddleware([sagaMiddleware]))
 
   store.sagaTask = sagaMiddleware.run(rootSaga)
 

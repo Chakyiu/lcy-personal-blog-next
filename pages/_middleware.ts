@@ -14,10 +14,6 @@ export function middleware(request: NextRequest) {
     request.nextUrl.locale === 'default'
 
   return shouldHandleLocale
-    ? NextResponse.redirect(
-        `/en${stripDefaultLocale(request.nextUrl.pathname)}${
-          request.nextUrl.search
-        }`
-      )
+    ? NextResponse.redirect(`/en${stripDefaultLocale(request.nextUrl.pathname)}${request.nextUrl.search}`)
     : undefined
 }
