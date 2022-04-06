@@ -7,7 +7,7 @@ interface IFullPageLayout {
 const SContainer = styled.div<{ hasHeader?: boolean }>`
   width: 100%;
   height: 100%;
-  margin-top: ${({ theme, hasHeader }) => (hasHeader ? theme.headerHeight : '0px')};
+  margin-top: ${({ theme, hasHeader }) => (hasHeader ? theme.vars.headerHeight : '0px')};
   display: flex;
   justify-content: center;
 `

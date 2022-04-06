@@ -3,7 +3,7 @@ import styled from 'styled-components/macro'
 const SContainer = styled.div`
   width: 100%;
   height: 100%;
-  margin-top: ${(props) => props.theme.headerHeight};
+  margin-top: ${({ theme }) => theme.vars.headerHeight};
   display: flex;
   justify-content: center;
 `

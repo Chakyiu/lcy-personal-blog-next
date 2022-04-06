@@ -8,13 +8,13 @@ interface IHeader {
 
 const SContainer = styled.div<{ isTransparent?: boolean }>`
   width: 100%;
-  height: ${(props) => props.theme.headerHeight};
+  height: ${({ theme }) => theme.vars.headerHeight};
   position: fixed;
   top: 0;
   display: flex;
   justify-content: center;
-  background-color: ${({ theme, isTransparent }) => (isTransparent ? 'transparent' : theme.body)};
-  box-shadow: ${({ theme, isTransparent }) => (isTransparent ? 'none' : theme.header.boxShadow)};
+  background-color: ${({ theme, isTransparent }) => (isTransparent ? 'transparent' : theme.colors.body)};
+  box-shadow: ${({ theme, isTransparent }) => (isTransparent ? 'none' : theme.colors.header.boxShadow)};
 `
 
 const SWrapper = styled.div`

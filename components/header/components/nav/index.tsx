@@ -8,7 +8,7 @@ const SSelectedNav = styled.div<{ isShow: boolean }>`
   width: 80%;
   height: 20%;
   position: absolute;
-  background-color: ${({ theme }) => theme.header.selectedNavBar};
+  background-color: ${({ theme }) => theme.colors.header.selectedNavBar};
   transition: width 0.2s ease-in-out;
 
   ${({ isShow }) =>
