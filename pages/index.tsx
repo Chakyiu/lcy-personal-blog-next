@@ -1,13 +1,7 @@
-import FullPageLayout from '@components/layout/fullPageLayout'
-import Header from '@components/header'
+import HomeComponent from '@components/pages/home'
 
 const Home = () => {
-  return (
-    <>
-      <Header isTransparent={true} />
-      <FullPageLayout></FullPageLayout>
-    </>
-  )
+  return <HomeComponent />
 }
 
 export default Home

@@ -9,6 +9,11 @@ export const lightTheme = {
     boxShadow: '0 5px 20px -10px #000',
     selectedNavBar: '#000000',
   },
+  page: {
+    home: {
+      bannerBackground: '#70bdc2',
+    },
+  },
 }
 
 export const darkTheme = {
@@ -20,4 +25,11 @@ export const darkTheme = {
     boxShadow: '0 5px 20px -10px #000',
     selectedNavBar: '#000000',
   },
+  page: {
+    home: {
+      bannerBackground: '#70bdc2',
+    },
+  },
 }
+
+export type TTheme = typeof lightTheme
