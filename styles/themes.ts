@@ -12,7 +12,10 @@ export const lightTheme = {
     },
     page: {
       home: {
-        bannerBackground: '#70bdc2',
+        bannerBackground: '#ffffff',
+        bannerImgBackground: '#ffffff',
+        bannerImgFrameColor: '#cfcfcf',
+        projectBackground: '#cfcfcf',
       },
     },
   },
@@ -30,7 +33,10 @@ export const darkTheme = {
     },
     page: {
       home: {
-        bannerBackground: '#70bdc2',
+        bannerBackground: '#ffffff',
+        bannerImgBackground: '#ffffff',
+        bannerImgFrameColor: '#cfcfcf',
+        projectBackground: '#cfcfcf',
       },
     },
   },

@@ -15,6 +15,7 @@ const SContainer = styled.div<{ isTransparent?: boolean }>`
   justify-content: center;
   background-color: ${({ theme, isTransparent }) => (isTransparent ? 'transparent' : theme.colors.body)};
   box-shadow: ${({ theme, isTransparent }) => (isTransparent ? 'none' : theme.colors.header.boxShadow)};
+  transition: all 0.3s ease-in-out;
 `
 
 const SWrapper = styled.div`

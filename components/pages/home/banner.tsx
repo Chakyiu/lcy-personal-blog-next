@@ -14,11 +14,11 @@ const SBannerContainer = styled.div`
 `
 
 const SImgContainer = styled.div`
-  margin: 40px;
+  margin: 80px;
   width: 400px;
   height: 400px;
-  background-color: #cfcfcf;
-  border: 8px solid #ffffff;
+  background-color: ${({ theme }) => theme.colors.page.home.bannerImgBackground};
+  border: 8px solid ${({ theme }) => theme.colors.page.home.bannerImgFrameColor};
   border-radius: 50%;
 `
 
@@ -40,7 +40,7 @@ const SDesc = styled.p`
 `
 
 const SDescriptionContainer = styled.div`
-  margin: 40px;
+  margin: 80px;
   width: 400px;
 `
 
